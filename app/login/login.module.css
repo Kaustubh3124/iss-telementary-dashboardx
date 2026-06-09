@@ -1,0 +1,190 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  background: #080b11;
+  overflow: hidden;
+}
+
+.stars {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 100px 300px #fff, 400px 100px #fff, 200px 400px #fff, 800px 200px #fff, 500px 600px #fff, 900px 800px #fff, 1200px 300px #fff, 1500px 700px #fff, 1100px 100px #fff, 700px 500px #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+}
+
+.stars2 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 250px 150px #fff, 650px 350px #fff, 350px 750px #fff, 750px 550px #fff, 1050px 150px #fff, 1350px 450px #fff, 1450px 850px #fff, 150px 600px #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+.orbitLogoContainer {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbitRing {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px dashed rgba(96, 165, 250, 0.4);
+}
+
+.satelliteNode {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #60a5fa;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
+.centerPlanet {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(13, 20, 37, 0.9);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+  z-index: 2;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background-color: rgba(13, 20, 37, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.errorContainer {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 1rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.inputIndent {
+  padding-left: 2.75rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+}
+
+.submitBtn {
+  margin-top: 0.5rem;
+  padding: 0.875rem;
+  width: 100%;
+}
+
+.footerNote {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.secureBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 6px #10b981;
+  display: inline-block;
+}

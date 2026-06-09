@@ -1,0 +1,225 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.controlStrip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.controlGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.controlBtn {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+}
+
+.themeToggleBtn {
+  padding: 0.5rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoutBtn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.errorBanner {
+  background-color: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: var(--danger);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pulseIcon {
+  animation: pulse-glow 1.5s infinite ease-in-out;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.statCard {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  letter-spacing: -0.03em;
+}
+
+.coordinateText {
+  display: inline-block;
+}
+
+.coordinateSeparator {
+  margin: 0 0.5rem;
+  color: var(--text-muted);
+}
+
+.skeletonText {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.mapCard {
+  padding: 1.5rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sectionHeaderTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.historyCounter {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  background-color: var(--primary-light);
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+}
+
+.mapContainer {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+}
+
+.mapSvg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mapLabelEq {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.mapLabelPm {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5rem;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.tableCard {
+  padding: 1.5rem;
+}
+
+.tableSubtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.responsiveTable {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.emptyState {
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.paginationRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+
+.pagBtn {
+  padding: 0.4rem 0.875rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.paginationPages {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
